@@ -52,11 +52,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg-main);
   color: var(--text-primary);
+  -webkit-tap-highlight-color: transparent;
 }
