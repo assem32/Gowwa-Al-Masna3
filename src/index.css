@@ -1,0 +1,62 @@
+
+:root {
+  /* =========================================
+     Theme Configuration (All Colors & Styles)
+     ========================================= */
+
+  /* 1. Brand Accent Colors (Gold from Logo) */
+  --color-primary: #D4A017;
+  --color-primary-hover: #E5B834;
+  --color-primary-muted: rgba(212, 160, 23, 0.15);
+
+  /* 2. Status & External Colors */
+  --color-success: #27ae60;
+  --color-error: #d13d56;
+  --color-whatsapp: #25d366;
+  --color-email: #0f3460;
+
+  /* 3. Dark Theme Surfaces */
+  --bg-main: #141517;
+  --bg-surface: #1F2226;
+  --bg-surface-hover: #2E3238;
+  
+  /* 4. Borders */
+  --border-subtle: #2E3238;
+  --border-strong: #475569;
+  
+  /* 5. Text Colors */
+  --text-primary: #F8F9FA;
+  --text-secondary: #ADB5BD;
+  --text-inverse: #141517;
+
+  /* 6. Overlays & Shadows */
+  --overlay-dark: rgba(20, 21, 23, 0.85);
+  --overlay-heavy: rgba(20, 21, 23, 0.95);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 15px var(--color-primary-muted);
+
+  /* System Settings */
+  font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--text-primary);
+  background-color: var(--bg-main);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
